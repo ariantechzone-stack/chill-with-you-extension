@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chill With You</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div id="scene" class="day">
+
+  <div class="lamp-glow"></div>
+  <div class="rain"></div>
+
+  <h2>☕ Chill With You</h2>
+
+  <button id="focusBtn">Focus Mode</button>
+  <button id="rainBtn">Rain</button>
+
+  <label>Lofi</label>
+  <input type="range" id="lofiVol" min="0" max="1" step="0.01" value="0.6">
+
+  <label>Rain</label>
+  <input type="range" id="rainVol" min="0" max="1" step="0.01" value="0.4">
+
+  <div id="pomodoro">
+    <p id="timer">25:00</p>
+    <button id="startPause">Start</button>
+    <button id="reset">Reset</button>
+  </div>
+
+</div>
+
+<audio id="lofi" src="assets/audio/lofi.mp3" loop></audio>
+<audio id="rainAudio" src="assets/audio/rain.mp3" loop></audio>
+<audio id="bellFocus" src="assets/audio/bellFocus.mp3"></audio>
+<audio id="bellBreak" src="assets/audio/bellBreak.mp3"></audio>
+
+<script src="popup.js"></script>
+</body>
+</html>
